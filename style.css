@@ -81,7 +81,7 @@ color: rgb(60, 65, 134);
 }
 
 #wrapper nav{
-  background: #545558;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
