@@ -263,6 +263,7 @@ label{
   margin: 20px 0 40px;
   -webkit-box-flex: 1;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .tab-links{
   display: -webkit-box;
