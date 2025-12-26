@@ -268,7 +268,12 @@ label{
 .tab-links{
   display: -webkit-box;
   -webkit-box-orient: horizontal;
-  margin-right: 50px;
+  margin-right: 20px;
+  background-color: #3a8d89;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
   font-weight: 500;
   cursor: pointer;
   position: relative;
