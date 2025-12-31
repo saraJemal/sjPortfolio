@@ -61,7 +61,8 @@ flex-wrap: wrap;
 #mainContent p{
 margin-left: 100px;
 font-size: xx-large;
-color: rgb(60, 65, 134);
+/*color: rgb(60, 65, 134);*/
+color: #0077ff;
 }
 #back2{
 
