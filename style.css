@@ -42,7 +42,7 @@ ul{
  #mainSection{
   margin-bottom: 10px;
   padding: 10px;
-  background-color: #eecfcf;
+  background-color: #6cabcf;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   display: flex;
@@ -62,7 +62,7 @@ flex-wrap: wrap;
 margin-left: 100px;
 font-size: xx-large;
 /*color: rgb(60, 65, 134);*/
-color: #0077ff;
+color: #fff;
 }
 #back2{
 
@@ -82,12 +82,12 @@ color: #0077ff;
 }
 
 #wrapper nav{
+  
   background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  
+  flex-wrap: wrap; 
   
 }
 nav:first-child{
@@ -118,11 +118,12 @@ nav:first-child{
 }
  
 .logo{
-  width: 100px;
+  width: 200px;
   margin-left: 20px;
 
 
 }
+nav ul{margin-right: 60px;}
 nav ul li{
   display: inline-block;
   list-style: none;
@@ -138,7 +139,7 @@ nav ul li a::after{
   content:'';
   width: 0;
   height: 3px;
-  background: #0077ff;
+  background: #1fddd4;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -175,6 +176,7 @@ footer{
 
 
 #About #mainSection{
+  background-color:#4c6e81;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   display: flex;
@@ -195,8 +197,9 @@ img{
 /*------------------About----------------*/
 #About{
   padding: 20px;
-  background-color: #eecfcf;
+  /*background-color: #eecfcf;*/
   margin-bottom: 10px;
+  background-color: #4c6e81;
 }
 input ~p {
   font-size: 16px;
@@ -254,7 +257,7 @@ label{
 }
 #Resume{
   padding: 20px;
-  background-color: #eecfcf;
+  background-color: #fdfdfd;
   margin-bottom: 10px;
 }
 .tab-titles{
@@ -293,6 +296,11 @@ transition: 0.5s;
 width: 100%;
 
 }
+#res-section ul{
+  max-width: 900px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .tab-contents ul{
   
   padding: auto;
@@ -303,6 +311,7 @@ width: 100%;
 .tab-contents ul li{
   margin: 10px;
   margin-left: 20px;
+  
 }
 .tab-contents ul li span{
 font-weight: bold;
@@ -319,6 +328,7 @@ font-weight: bold;
   padding: 10px;
   background-color: #eecfcf;
   margin-bottom: 10px;
+  align-items: flex-start;
 }
 .projects-list{
   display: grid;
@@ -326,6 +336,7 @@ font-weight: bold;
   grid-gap: 40px;
   margin-top: 50px;
   margin: 30px;
+  align-items: flex-start;
 
 }
 .ewh{
@@ -388,12 +399,14 @@ transition: 0.5s;
 }
 .projects-list .list.right a{
   text-decoration: none;
-  color: #5b66ac;
+  color: #fff;
   text-align: center;
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
   display: inline-block;
+  background-color: #3a8d89;
+  
   
 }
 .projects-list .list:hover{
@@ -416,7 +429,7 @@ h1{
 #contact{
   
   padding: 10px;
-  background-color: #eecfcf
+  background-color: #99a2ce
 }
 .container{
   padding: 10px 10%;
