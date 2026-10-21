@@ -316,7 +316,7 @@
             </article>
 
           </div>
-
+        
           
           <!-- Project Demo Popup -->
           <div
@@ -350,71 +350,71 @@
               </div>
             </div>
           </div>
+      </div> <!-- End of projects-grid -->
+    </div> <!-- End of main container -->
 
-
-          <!-- ONLINE EXAM SCREENSHOTS: KEEP THESE -->
+          <!-- ONLINE EXAM SCREENSHOTS -->
           <div class="exam-screenshots">
-            <h2>Online Exam Web Service — Screenshots</h2>
-            <p>
-              Explore the different interfaces of the Online Exam Web Service
-              for administrators, HR staff, and applicants.
-            </p>
+            <div class="exam-screenshots-inner">
+              <h2>Online Exam Web Service — Screenshots</h2>
+              <p>
+                Explore the different interfaces of the Online Exam Web Service
+                for administrators, HR staff, and applicants.
+              </p>
 
-            <div class="exam-screenshot-grid">
+              <div class="exam-screenshot-grid">
+                <figure class="exam-screenshot">
+                  <img
+                    src="image/Login-Page.JPG"
+                    alt="Online Exam Web Service login page"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <h3>Login Page</h3>
+                    <p>Provides role-based access for authorized system users.</p>
+                  </figcaption>
+                </figure>
 
-              <figure class="exam-screenshot">
-                <img
-                  src="image/Login-Page.JPG"
-                  alt="Online Exam Web Service login page"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3>Login Page</h3>
-                  <p>Provides role-based access for authorized system users.</p>
-                </figcaption>
-              </figure>
+                <figure class="exam-screenshot">
+                  <img
+                    src="image/AdminPage.JPG"
+                    alt="Online Exam Web Service administrator page"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <h3>Admin Page</h3>
+                    <p>Supports user account and access management.</p>
+                  </figcaption>
+                </figure>
 
-              <figure class="exam-screenshot">
-                <img
-                  src="image/AdminPage.JPG"
-                  alt="Online Exam Web Service administrator page"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3>Admin Page</h3>
-                  <p>Supports user account and access management.</p>
-                </figcaption>
-              </figure>
+                <figure class="exam-screenshot">
+                  <img
+                    src="image/hrPage.JPG"
+                    alt="Online Exam Web Service HR page"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <h3>HR Page</h3>
+                    <p>Supports exam scheduling, question management, and result review.</p>
+                  </figcaption>
+                </figure>
 
-              <figure class="exam-screenshot">
-                <img
-                  src="image/hrPage.JPG"
-                  alt="Online Exam Web Service HR page"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3>HR Page</h3>
-                  <p>Supports exam scheduling, question management, and result review.</p>
-                </figcaption>
-              </figure>
-
-              <figure class="exam-screenshot">
-                <img
-                  src="image/Student-Page.JPG"
-                  alt="Online Exam Web Service applicant page"
-                  loading="lazy"
-                />
-                <figcaption>
-                  <h3>Applicant Page</h3>
-                  <p>Allows applicants to view exam instructions, take scheduled exams, and review results.</p>
-                </figcaption>
-              </figure>
-
+                <figure class="exam-screenshot">
+                  <img
+                    src="image/Student-Page.JPG"
+                    alt="Online Exam Web Service applicant page"
+                    loading="lazy"
+                  />
+                  <figcaption>
+                    <h3>Applicant Page</h3>
+                    <p>Allows applicants to view exam instructions, take scheduled exams, and review results.</p>
+                  </figcaption>
+                </figure>
+              </div>
             </div>
           </div>
-
-        </div>
       </section>
+
 
       <!---------------------------Contacts------------------------>
     <section id="contact">
@@ -425,7 +425,7 @@
           <div class="contact-left">
             
             <p><i class="fa-solid fa-paper-plane"></i> jemal.s1957@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +251936460997</p>
+            <p><i class="fa-solid fa-phone"></i> +251936460997 / +251973193224</p>
             <div class="social-icons">
               <a href="#contact"><i class="fa-brands fa-facebook"></i></a>
               <a href="#contact"><i class="fa-brands fa-linkedin"></i></a>
@@ -434,9 +434,11 @@
           </div>
         
           
+        
         <div class="contact-right">
           <form
-            action="https://formsubmit.co/jemal.s1957@gmail.com"
+            id="contact-form"
+            action="https://formsubmit.co/ajax/jemal.s1957@gmail.com"
             method="POST"
           >
             <input
@@ -450,7 +452,6 @@
               name="_template"
               value="table"
             >
-            <input type="hidden" name="_next" value="https://sarajemal.github.io/sjPortfolio/">
 
             <input
               type="text"
@@ -478,8 +479,9 @@
             </button>
           </form>
 
-          <span id="msg"></span>
+          <span id="msg" role="status" aria-live="polite"></span>
         </div>
+
     
         </div>
       </article>
@@ -627,6 +629,68 @@
         });
       });
 
+      // Contact form submission feedback
+      
+  // Contact form: inline success and error messages
+  const contactForm = document.getElementById("contact-form");
+  const contactMsg = document.getElementById("msg");
+
+  if (contactForm && contactMsg) {
+    contactForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const submitButton = contactForm.querySelector(
+        'button[type="submit"]'
+      );
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending...";
+      contactMsg.textContent = "";
+      contactMsg.className = "";
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify(
+            Object.fromEntries(new FormData(contactForm))
+          )
+        });
+
+        const responseText = await response.text();
+        
+
+        const data = JSON.parse(responseText);
+        
+        // FormSubmit may return "true" or "false" as strings.
+        if (String(data.success) === "true") {
+          contactMsg.textContent =
+            "Thank you! Your message has been sent successfully.";
+          contactMsg.className = "success";
+          contactForm.reset();
+
+          setTimeout(() => {
+            contactMsg.textContent = "";
+            contactMsg.className = "";
+          }, 5000);
+        } else {
+          contactMsg.textContent =
+            data.message || "Sorry, your message could not be sent. Please try again.";
+          contactMsg.className = "error";
+        }
+      } catch (error) {
+        contactMsg.textContent =
+          "A connection error occurred. Please check your internet and try again.";
+        contactMsg.className = "error";
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = "Submit";
+      }
+    });
+  }
 
     </script>
     
