@@ -39,7 +39,7 @@
             <header>
               <h1> Hi, I'm Sara Jemal</h1>
             </header>
-            <p> Full-Stack Developer</p>
+            <p> Software Developer</p>
           </article>
         </section>
       
@@ -66,8 +66,18 @@
             <h2> About Me</h2>
             <div class="showmore"> 
               <input id ="ch" type="checkbox">    
-              <p> I am a full-stack software developer experienced in building web and mobile applications. I developed an Employee Work Hour Tracker mobile application as my graduation project at the International Open University and an Online Exam Management System for Hijra Bank as part of a community service program. I am currently finalizing a School Management System that will be launched online soon...</p> 
-              <div class="showless"><p>I am a highly organized and motivated team leader with proven ability to manage complex responsibilities in demanding environments. Passionate about innovation and continuous learning, I am committed to using my skills to create impactful solutions and contribute positively to society.</p>
+              <p> I am a software developer and IT solutions provider with BSc degrees in Electrical Engineering from Hawassa University and Information Technology from International Open University.
+
+              I specialize in developing practical, user-friendly web applications and digital solutions that help schools, businesses, and organizations improve efficiency, simplify their operations, and achieve their goals.
+
+              My portfolio includes a School Information Management System, a school website, and an Online Exam Web Service. </p> 
+              <div class="showless"><p> These projects demonstrate my ability to transform practical needs into functional digital solutions.
+
+              Beyond development, I provide website maintenance, technical support, and software customization to help clients keep their digital solutions running smoothly and adapt them as their needs evolve.
+
+              My goal is to build reliable, tailored technology solutions and establish lasting relationships with clients through quality work, responsive support, and continuous improvement.
+
+              Have an idea or need a digital solution? Let's work together to bring it to life.</p>
                   <label for="ch">Show less</label>
                </div>
                <label for="ch">Read more</label>   
@@ -79,21 +89,51 @@
        <div id="Resume">
         <h1>Resume</h1>
        <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
-        <p class="tab-links" onclick="opentab('education')">Education</p>
-        <p class="tab-links" onclick="opentab('internship')">Internship</p>
-        <p class="tab-links" onclick="opentab('training')">Training </p>
-        <p class="tab-links" onclick="opentab('languages')">Languages </p>
+        <p class="tab-links active-link" onclick="opentab('skills', this)">Skills</p>
+        <p class="tab-links" onclick="opentab('experiance', this)">Experiance</p>
+        <p class="tab-links" onclick="opentab('education', this)">Education</p>
+        <p class="tab-links" onclick="opentab('internship', this)">Internship</p>
+        <p class="tab-links" onclick="opentab('training', this)">Training </p>
+        <p class="tab-links" onclick="opentab('languages', this)">Languages </p>
       </div>
+      
       <div id="res-section">
-      <div class="tab-contents active-tab" id="skills">
-        <ul>
-          <li><span>Programming Languages: </span>C++, Java, Java Servlets, PHP, JavaScript and Python.</li>
-          <li><span>DBMS Languages: </span>SQL, HTML, CSS.</li>
-          <li><span>DBMS software: </span>Android Studio, Visual Studio Code, Oracle APEX, MySQL, XAMPP, &nbsp NetBeans, Word press, Trello, Git, GitHub, and GitHubDesktop .</li>
-        </ul>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>Web Development:</span>
+              HTML5, CSS3, JavaScript, TypeScript, Next.js,
+              Tailwind CSS, Bootstrap, and JSP.
+            </li>
+            <li>
+              <span>Programming Languages:</span>
+              Java, Python, C++, and PHP.
+            </li>
+            <li>
+              <span>Content Management Systems:</span>
+              WordPress.
+            </li>
+            <li>
+              <span>Databases & Query Languages:</span>
+              MySQL, PostgreSQL, and SQL.
+            </li>
+            <li>
+              <span>ORM & Database Tools:</span>
+              Prisma ORM.
+            </li>
+            <li>
+              <span>Development Tools & Environments:</span>
+              Visual Studio Code, Android Studio, NetBeans,
+              and Oracle APEX.
+            </li>
+            <li>
+              <span>Containers & Version Control:</span>
+              Docker, Git, GitHub, and GitHub Desktop.
+            </li>
+          </ul>
+        </div>
       </div>
+
       <div class="tab-contents" id="experiance">
         <ul>
           <li><span>17 June, 2021 to 31 August, 2023: </span>Secretary at Mohammad Hamid Aleisa Company</li>
@@ -135,124 +175,247 @@
     </div>
 
     <!-------------------------Projects--------------------->
-    <section id="project">
-      <article class="projArt">
-        <h1>My Projects</h1>
-        <div class="projects-list">
-          <div class="list left">
-            <img src="image/firstPage.JPG" alt="">
-            <h2 style="font-size: 18px; background-color: #d9dde2; padding: 10px; width: 300px; text-align: center;">Online Exam Web Service</h2>
-            <div class="showmore">
-              <input id="sh" type="checkbox">
-            <p style="font-size: 18px; background-color: #d9dde2; padding: 10px;">The main goal of Online Exam Web Service (OEWS) is to effectively evaluate the shortlisted applicants in staff recruitment thoroughly through a totally automated system that not only reduce the required time but also obtain fast and accurate results....</p>
-            <div class="showless"> 
-              <p style="font-size: 18px; background-color: #d9dde2;margin-top: 20px; margin-bottom: -20px;">Online Exam Web Service’s some features are stated as follows:</p><br>
-              <ul class="ftr">
-                  <li class="lst">Saves the exams and users information in a database.</li>
-                  <li class="lst">Enables exams only for scheduled period of time.</li>
-                  <li class="lst">Displays random questions for students or applicants.</li>
-                  <li class="lst">Auto submits the exam upon expiration of allowed time.</li>
-                  <li class="lst">Auto marks the attempted exam and produce the reports of the results.</li>
-                  <li class="lst">Prevent exam refreshing and resubmission using session expiration and database.</li>
-              </ul>
-              
-              <label for="sh">Show Less</label>
-            </div>
-            <label for="sh">Show More</label>
-            </div> 
-          <a href="image/oews1.mp4">Exam-Demo</a> 
-          
-          </div>
     
-          <div class="list right">
-            <img src="image/Main Home Page.jpg" alt="" class="ewh">
-           
-            <div class="showmore">
-              <h2>Employee Work Hour Tracker </h2>
-              <input id="wh" type="checkbox">
-            <p>The main aim of this application is to keep track of attendance and employees’ wages. Attendance tracking based on GPS location is enabled to avoid any attempt to add proxy attendance.
-            The administration's role is to add new employee details and provide the employee with the respective user name and Password to the Employee so that access to the app is enabled...</p>
-            <div class="showless"> <p>Administrative staff will be able to view the GPS location of each employee by entering the employee’s user name and date. Administrative staff will also be able to view the latitude and longitude of the employee’s GPS location as well as the number of logins and logouts on a particular day. The hours will contribute to the calculation of the hourly wage that will be displayed on the mobile apps.
-            The employee will log in with his or her image captured with GPS location. This information will be sent to the Administration. Upon login, the GPS location will be automatically tracked by the system after every 10 minutes. Hourly wages will be based on the number of hours worked on a particular day.
-              </p>
-              <label for="wh" class="wht">Show Less</label>
-            </div>
-            <label for="wh" class="wht">Show More</label>
-            </div>
-            <a href="image/EWHT-demo1.mp4">Tracker-Demo</a>   
-          </div> 
-        </div>
-      </article>
-     <article>
-      <header><p class="E-title">Exam-ScrnShot</p> </header>
-    <div class="wrap">   
-      <div class="cards-wrap">
-            <div class="card-item">
-              <div class="card-inner">
-                <div class="card-top">
-                  <img src="image/Login-Page.JPG" alt="Login-Page">
-                </div>
-                <div class="card-bottom">
-                  <div class="card-category">
-                    Login Page
-                  </div>
-                  <div class="card-info">
-                  <p class="detail">This page is a general login page. All users namely: Admin, HR, and Applicant can login to their respective page using their own email and the password that stored in a database when they are registered. 
-                  When a user clicks a login button shown on the right-top corner of the main page of the system, it leads the user to this page which asks for email and password of the user. If a user enters his/her email and password, the system checks for their match in the data base and under which role they are, then it leads the user to his/her respective role page namely: Admin Page, HR Page, and Applicant Page. 
-</p>
-                  </div>
-                </div>
+      <section id="project">
+        <div class="container">
+          <h1 class="sub-title">My Projects</h1>
+          <p class="projects-intro">
+            A selection of web applications and websites I have developed.
+            Each project demonstrates my commitment to building practical,
+            user-friendly digital solutions.
+          </p>
+
+          <div class="projects-grid">
+
+            <!-- PROJECT 1: ONLINE EXAM WEB SERVICE -->
+            <article class="project-card">
+              <img
+                src="image/firstPage.JPG"
+                alt="Online Exam Web Service home page"
+                class="project-image"
+              />
+
+              <div class="project-content">
+                <span class="project-category">Web Application</span>
+                <h2>Online Exam Web Service (OEWS)</h2>
+
+                <p>
+                  A web-based recruitment assessment solution designed to help
+                  organizations manage examinations for shortlisted applicants,
+                  from exam scheduling and question preparation to timed
+                  assessments and result reporting.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Administrator account and user management.</li>
+                  <li>HR exam scheduling and question management.</li>
+                  <li>Importing exam questions from Excel.</li>
+                  <li>Timed examinations with automatic submission.</li>
+                  <li>Automatic score calculation and result reports.</li>
+                </ul>
+
+              <button
+                type="button"
+                class="watch-demo-btn"
+                data-video-url="https://www.youtube.com/embed/521sqgOd_w4"
+                data-video-title="Online Exam Web Service Demo"
+              >
+                <i class="fas fa-play-circle"></i> Watch Demo
+              </button>
+
+
               </div>
-            </div>
-            <div class="card-item" >
-              <div class="card-inner">
-                <div class="card-top">
-                  <img src="image/AdminPage.JPG" alt="Login-Page">
-                </div>
-                <div class="card-bottom">
-                  <div class="card-category">
-                    Admin Page
-                  </div>
-                  <div class="card-info">
-                  <p class="detail">Admin registers the detail of users and generates their passwords. And he/she can add/delete/update users and view their activities. Overall management of users are carried out by admin.</p>
-                  </div>
-                </div>
+            </article>
+
+            <!-- PROJECT 2: SCHOOL MANAGEMENT SYSTEM -->
+            <article class="project-card">
+              <!-- Replace this image path with your real screenshot -->
+              <img
+                src="image/schooMgtImg.png"
+                alt="School Management System dashboard"
+                class="project-image"
+              />
+
+              <div class="project-content">
+                <span class="project-category">School Information System</span>
+                <h2>School Management System</h2>
+
+                <p>
+                  A role-based school information management system that brings
+                  important school activities together for administrators,
+                  teachers, students, and parents.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Student enrollment and attendance management.</li>
+                  <li>Assessment results, report cards, and performance analysis.</li>
+                  <li>Teacher and student dashboards.</li>
+                  <li>Class schedules, announcements, and school events.</li>
+                  <li>Communication Book for parent–teacher communication.</li>
+                  <li>Parent access to their children's results and attendance.</li>
+                </ul>
+
+                
+              
+              <button
+                type="button"
+                class="watch-demo-btn"
+                data-video-url="https://www.youtube.com/embed/bbAbR3PHAi0"
+                data-video-title="School Management System Demo"
+              >
+                <i class="fas fa-play-circle"></i> Watch Demo
+              </button>
+
+
               </div>
-            </div>
-            <div class="card-item" >
-              <div class="card-inner">
-                <div class="card-top">
-                  <img src="image/hrPage.JPG" alt="Login-Page">
-                </div>
-                <div class="card-bottom">
-                  <div class="card-category">
-                    Hr Page
-                  </div>
-                  <div class="card-info">
-                  <p class="detail">HR can add/delete/update schedules, time limited questions to the database. In this page, first an HR adds schedules which contains Subjects, total number of questions, total marks, given duration, and the range of date in which the exam is available online for an applicant to attempt it. There are also links that help to add/delete/edit multiple choices questions, to upload multiple choices questions from excel file, and to review details of results of applicants that have attempted the exams.  </p>
-                  </div>
-                </div>
+            </article>
+
+            <!-- PROJECT 3: SUMMERLAND ACADEMY WEBSITE -->
+            <article class="project-card">
+              <!-- Replace this image path with your real screenshot -->
+              <img
+                src="image/websiteImg.png"
+                alt="Summerland Academy school website home page"
+                class="project-image"
+              />
+
+              <div class="project-content">
+                <span class="project-category">School Website</span>
+                <h2>School Website</h2>
+
+                <p>
+                  A school website designed to present the school's identity,
+                  academic programs, facilities, admissions process, news,
+                  and events in a clear and family-friendly format.
+                </p>
+
+                <h3>Key Features</h3>
+                <ul>
+                  <li>School profile, mission, vision, and values.</li>
+                  <li>Academic programs, facilities, staff, and achievements.</li>
+                  <li>Kindergarten and elementary registration form.</li>
+                  <li>Payment form with a receipt upload field.</li>
+                  <li>News, events, student activities, and clubs.</li>
+                  <li>Contact information for families and visitors.</li>
+                </ul>
+
+
+          <button
+            type="button"
+            class="watch-demo-btn"
+            data-video-url="https://www.youtube.com/embed/2N4MbWtK9_w"
+            data-video-title="School Website Demo"
+          >
+            <i class="fas fa-play-circle"></i> Watch Demo
+          </button>
+
+
               </div>
-            </div>
-            <div class="card-item" >
-              <div class="card-inner">
-                <div class="card-top">
-                  <img src="image/Student-Page.JPG" alt="Login-Page">
-                </div>
-                <div class="card-bottom">
-                  <div class="card-category">
-                    Aplicant Page
-                  </div>
-                  <div class="card-info">
-                  <p class="detail">Upon successful login an applicant views exam instruction and schedules of all subjects. Then he/she checks schedule of the subject they intend to attempt by selecting from given select box and pressing check Availability button. If the exam is available, the system enable start exam button. By clicking the start exam button, he/she can attempt the question of that particular subject. After answering questions and clicking submit button, the result and other information of it will be displayed on the screen instantly. Then he/she can logout from the system by pressing logout button. </p>
-                  </div>
-                </div>
+            </article>
+
+          </div>
+
+          
+          <!-- Project Demo Popup -->
+          <div
+            class="demo-modal"
+            id="demoModal"
+            aria-hidden="true"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="demoModalTitle"
+          >
+            <div class="demo-modal-content">
+              <div class="demo-modal-header">
+                <h2 id="demoModalTitle">Project Demo</h2>
+
+                <button
+                  type="button"
+                  class="demo-modal-close"
+                  id="closeDemoModal"
+                  aria-label="Close video"
+                >&times;</button>
               </div>
-            </div>
+
+              <div class="demo-modal-video">
+                <iframe
+                  id="demoModalIframe"
+                  src="about:blank"
+                  title="Project Demo Video"
+                  allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
-     </article>
-    </section>
+
+
+          <!-- ONLINE EXAM SCREENSHOTS: KEEP THESE -->
+          <div class="exam-screenshots">
+            <h2>Online Exam Web Service — Screenshots</h2>
+            <p>
+              Explore the different interfaces of the Online Exam Web Service
+              for administrators, HR staff, and applicants.
+            </p>
+
+            <div class="exam-screenshot-grid">
+
+              <figure class="exam-screenshot">
+                <img
+                  src="image/Login-Page.JPG"
+                  alt="Online Exam Web Service login page"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3>Login Page</h3>
+                  <p>Provides role-based access for authorized system users.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="exam-screenshot">
+                <img
+                  src="image/AdminPage.JPG"
+                  alt="Online Exam Web Service administrator page"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3>Admin Page</h3>
+                  <p>Supports user account and access management.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="exam-screenshot">
+                <img
+                  src="image/hrPage.JPG"
+                  alt="Online Exam Web Service HR page"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3>HR Page</h3>
+                  <p>Supports exam scheduling, question management, and result review.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="exam-screenshot">
+                <img
+                  src="image/Student-Page.JPG"
+                  alt="Online Exam Web Service applicant page"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3>Applicant Page</h3>
+                  <p>Allows applicants to view exam instructions, take scheduled exams, and review results.</p>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!---------------------------Contacts------------------------>
     <section id="contact">
       <h1> Contact </h1>
@@ -267,18 +430,56 @@
               <a href="#contact"><i class="fa-brands fa-facebook"></i></a>
               <a href="#contact"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <a href="image/CV-and-documents.pdf" download='Sara-CV' class="btn">Download CV</a>
+            <!--<a href="" download='' class="btn">Download CV</a>-->
           </div>
         
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" row="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn" id="cont"> Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
+          
+        <div class="contact-right">
+          <form
+            action="https://formsubmit.co/jemal.s1957@gmail.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New message from my portfolio"
+            >
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            >
+            <input type="hidden" name="_next" value="https://sarajemal.github.io/sjPortfolio/">
+
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            >
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            >
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn" id="cont">
+              Submit
+            </button>
+          </form>
+
+          <span id="msg"></span>
+        </div>
     
         </div>
       </article>
@@ -287,64 +488,148 @@
           Copyright &copy; 2026 @SaraPortfolio.com
         </footer>
      </section>
-     <script>
-      const tablinks = document.getElementsByClassName('tab-links');
-      const tabcontents = document.getElementsByClassName('tab-contents');
-
-      function opentab(tabname){
-        for(tablink of tablinks){
-          tablink.classList.remove('active-link');
-        }
-        for(tabcontent of tabcontents){
-          tabcontent.classList.remove('active-tab');
-        }
-        event.currentTarget.classList.add('active-link');
-        document.getElementById(tabname).classList.add('active-tab');
-      }
-
-
-      function showSidebar(){
-        const sidebar= document.querySelector(".sidebar");
-        sidebar.style.display= "flex";
-        const navList = document.getElementById('#nav-list');
-  navList.classList.toggle('active');
-
-      }
-      function hideSidebar(){
-        const sidebar= document.querySelector(".sidebar");
-        sidebar.style.display= "none";
-        const navList = document.getElementById('#nav-list');
-        navList.classList.remove('active');
-      }
-     </script>
-     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwpPq-UnVTONrwWHSOCtaVwo9qcnVo0MRABLJTaEMLCeeeGUA9lz2EaUyqBRbfHReh2cg/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-           msg.innerHTML = "Message sent successfully"
-           setTimeout(function(){
-            msg.innerHTML = ""
-           }, 5000)
-           form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+     
     <script>
-      const title = document.querySelector('.E-title');
-      const contents = document.querySelectorAll('.cards-wrap .card-item');
-      let isOpen = false;
-      title.addEventListener('click', function(){
-        isOpen = !isOpen;
-        contents.forEach(content => {
-          content.style.display = isOpen ? 'block' : 'none';
+      // Resume tabs
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, clickedTab) {
+        for (const tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (const tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        if (clickedTab) {
+          clickedTab.classList.add("active-link");
+        }
+
+        const selectedTab = document.getElementById(tabname);
+
+        if (selectedTab) {
+          selectedTab.classList.add("active-tab");
+        }
+      }
+
+      // Mobile navigation
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        const navList = document.getElementById("nav-list");
+
+        if (sidebar) {
+          sidebar.style.display = "flex";
+        }
+
+        if (navList) {
+          navList.classList.add("active");
+        }
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        const navList = document.getElementById("nav-list");
+
+        if (sidebar) {
+          sidebar.style.display = "none";
+        }
+
+        if (navList) {
+          navList.classList.remove("active");
+        }
+      }
+
+      // Project demo modal
+      
+      document.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("demoModal");
+        const iframe = document.getElementById("demoModalIframe");
+        const modalTitle = document.getElementById("demoModalTitle");
+        const closeButton = document.getElementById("closeDemoModal");
+        const demoButtons = document.querySelectorAll(".watch-demo-btn");
+
+        if (!modal || !iframe || !modalTitle || !closeButton) return;
+
+        let previousFocus = null;
+
+        function openDemo(button) {
+          const videoUrl = button.dataset.videoUrl;
+          const title = button.dataset.videoTitle || "Project Demo";
+
+          if (!videoUrl) return;
+
+          // Accept YouTube embed URLs only.
+          let url;
+
+          try {
+            url = new URL(videoUrl, window.location.href);
+          } catch {
+            return;
+          }
+
+          if (
+            url.protocol !== "https:" ||
+            !["www.youtube.com", "youtube.com", "www.youtube-nocookie.com"]
+              .includes(url.hostname) ||
+            !url.pathname.startsWith("/embed/")
+          ) {
+            return;
+          }
+
+          url.searchParams.set("autoplay", "1");
+          url.searchParams.set("rel", "0");
+
+          previousFocus = button;
+          modalTitle.textContent = title;
+          iframe.title = title;
+          iframe.src = url.toString();
+
+          modal.classList.add("is-open");
+          modal.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+          closeButton.focus();
+        }
+
+        function closeDemo() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+
+          // Stop playback when the popup closes.
+          iframe.src = "about:blank";
+
+          document.body.style.overflow = "";
+          previousFocus?.focus();
+        }
+
+        demoButtons.forEach((button) => {
+          button.addEventListener("click", () => openDemo(button));
+        });
+
+        closeButton.addEventListener("click", closeDemo);
+
+        // Close when the dark backdrop is clicked.
+        modal.addEventListener("click", (event) => {
+          if (event.target === modal) {
+            closeDemo();
+          }
+        });
+
+        // Close with the Escape key.
+        document.addEventListener("keydown", (event) => {
+          if (
+            event.key === "Escape" &&
+            modal.classList.contains("is-open")
+          ) {
+            closeDemo();
+          }
         });
       });
+
+
     </script>
+    
+
     </body>    
 </html>
